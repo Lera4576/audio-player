@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <img src="image/lemonade.png" id="background" />
+    <audio src="audio/beyonce.mp3" id="song"></audio>
+    <div class="container">
+        <div class="box"></div>
+        <img src="image/lemonade.png" id="thumbnail" />
+        <img src="svg/play.png" onclick="playPause()" id="play-pause" />
+        <img src="svg/forward.png" onclick="nextSong()" id="next-song" />
+        <img src="svg/backward.png" onclick="previousSong()" id="previous-song" />
+        <div class="song-artist">Beyonce</div>
+        <div class="song-title">Don't Hurt Yourself</div>
+        <input type="range" id="progress-bar" min="0" max="100" value="0" onchange="changeProgressBar()" />
+        <div class="currentTime" id="currentTime">0:00</div>
+        <div class="durationTime" id="durationTime">0:00</div>
+    </div>
+    <script src="index.js"></script>
+</main>
+    <footer>
+        <a class="github" href="https://github.com/Lera4576">
+            <img class="github-image" src="svg/git.png" alt="github" width="123" height="76" >
+          </a>
+          <p>2024</p>
+          <a href="https://rs.school/courses/javascript-ru">
+            <img class="rsschool-image" src="svg/rs-school-logo.svg" alt="rsschool" width="153" height="106">
+          </a>
+    </footer>
+</body>
+</html>
